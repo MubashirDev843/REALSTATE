@@ -25,10 +25,11 @@ const Hero = () => {
     </section>
       </div>
       {/* Form start from here */}
-      <div data-aos="zoom-in" id='form' className='lg:w-[70%]  w-full m-auto grid lg: grid-cols-4 justify-center items-center gap-6 p-8  rounded-xl -mt-14 '>
+
+      <div data-aos="zoom-in" id='form' className='lg:w-[70%] z-50 w-full m-auto grid lg: grid-cols-4 justify-center items-center gap-6 p-8  rounded-xl -mt-14 '>
         <div className='w-full'>
           <h1 className='text-black  font font-semibold dark:text-white'>LOCATION</h1>
-          <input type="text" placeholder='Enter an address,state , city or pincode' className='bg-white p-2 w-full  mt-2 boeder-b-[1px] border-[#c9c7c1]'/>
+          <input type="text" placeholder='Enter an address,state , city or pincode' className='bg-white p-2 w-full  mt-2 border-b-[1px] border-[#c9c7c1]'/>
         </div>
 
         <div className='w-full'>
@@ -36,10 +37,25 @@ const Hero = () => {
           <select name="selectOption" id="selectOption" className='bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md'>
             <option value="" disabled selected>Select Property</option>
             <option value="Option1">Rentals</option>
+            <option value="Option1">Sales</option>
+            <option value="Option1">Commerical</option>
           </select>
-
         </div>
 
+        <div className='w-full'>
+          <h1 className='text-black font-semibold dark:text-black'>CATEGORY</h1>
+          <select name="selectOption" id="selectOption" className='bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md'>
+            <option value="" disabled selected>Property category</option>
+            <option value="Option1">Apartment</option>
+            <option value="Option1">Dupless</option>
+            <option value="Option1">Condos</option>
+            <option value="Option1">Condos</option>
+            <option value="Option1">Condos</option>
+          </select>
+        </div>
+        <div className='w-full'>
+          <button className='bg-red-600 dark:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black  text-lg p-4  w-full  text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110  transition-transform  duration-300  '>Submit</button>
+        </div>
       </div>
     </>
   )
