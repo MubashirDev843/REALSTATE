@@ -19,8 +19,22 @@ const About = () => {
         <img data-aos="zoom-in" src={aboutimg} alt="About image" className='rounded-2xl lg:w-[500px] lg:h-[600px]' />
       </div>
 
+      <div className='flex flex-col justify-center items-start gap-8'>
+      <h1 data-aos="zoom-in " className='text-red-500 dark:text-white'>WHO WE ARE</h1>
+      
+        <h1 data-aos="zoom-in" data-aos-delay="200" className='text-black text-[40px] font-semibold leading-10 dark:text-white '>
+          Lorem ipsum dolor sit amet.
+        </h1>
+
+        <p data-aos='zoom-in' data-aos-delay="400" className='text-xl text-gray-600 dark:text-white text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas illum ut, quidem iure enim saepe id non dicta dolor officia voluptatum dignissimos perferendis neque laborum dolorem aut expedita! Architecto corporis unde provident quae, quo doloremque vitae labore tempora repellat facere, impedit assumenda culpa similique maxime ut magni rerum, necessitatibus minima!</p>
+
+        <button className='bg-red-600 dark:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black  text-lg p-4  w-full  text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110  transition-transform  duration-300  '>Submit</button>
+
+      </div>
+
     </section>
   )
 }
 
 export default About
+
